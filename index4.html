@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
 <html class="no-js" prefix="og: https://ogp.me/ns#" lang="hu">
-<head><link rel="preconnect" href="https://duyn491kcolsw.cloudfront.net" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta charset="utf-8"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/2d/2di/2div3h.svg?ph=97d10bf9fc" type="image/svg+xml" sizes="any"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/07/07f/07fzq8.svg?ph=97d10bf9fc" type="image/svg+xml" sizes="16x16"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/1j/1j3/1j3767.ico?ph=97d10bf9fc"><link rel="apple-touch-icon" href="https://duyn491kcolsw.cloudfront.net/files/1j/1j3/1j3767.ico?ph=97d10bf9fc"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/1j/1j3/1j3767.ico?ph=97d10bf9fc">
+<head><link rel="preconnect" href="https://duyn491kcolsw.cloudfront.net" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OSI modell rétegei: :: iksz</title>
+    <title>OSI modell rétegei: :: IKSZ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="msapplication-tap-highlight" content="no">
     
@@ -150,7 +150,7 @@
 	<div class="ez-c"><div class="b b-text cf">
 	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center"><strong>OSI modell rétegei:</strong></h1>
 
-<p>Ide írhatsz...</p>
+<p></p>
 </div>
 </div><div class="b b-text cf">
 	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h3>Fizikai réteg (1. réteg)</h3><ul><li><strong>Jelzési alréteg</strong>: Meghatározza, hogy az elektromos jelek hogyan közvetítik az adatokat a fizikai közegen (kábelek, rádióhullámok stb.).</li><li><strong>Adathordozási réteg</strong>: Biztosítja a fizikai csatlakozást a hálózati eszközök között, figyelve a sávszélességre és az átviteli sebességre.</li></ul><h3>Adatkapcsolati réteg (2. réteg)</h3><p>Az adatkapcsolati réteg további alrétegeket tartalmaz, hogy jobban támogassa a helyi hálózati kommunikációt.</p><ul><li><strong>LLC (Logical Link Control - Logikai Kapcsolatvezérlő alréteg)</strong>: Kezeli a kapcsolatot a hálózati réteghez, és lehetővé teszi több protokoll együttes használatát ugyanazon a fizikai kapcsolaton. Az LLC végzi a hibaellenőrzést és a szinkronizálást.</li><li><strong>MAC (Media Access Control - Médiahozzáférés-vezérlő alréteg)</strong>: Felelős a csomagok címzéséért és az adathordozó közeghez való hozzáférés kezeléséért (pl. Wi-Fi, Ethernet). Minden eszközhöz egyedi MAC-címet rendel, amely azonosítja a hálózaton.</li></ul><h3>Hálózati réteg (3. réteg)</h3><p>A hálózati rétegben az alrétegek inkább funkcionális szétválasztások formájában jelennek meg.</p><ul><li><strong>Útvonalválasztás</strong>: Meghatározza, hogyan jutnak el az adatcsomagok egyik hálózatból a másikba. Például a routerek segítségével határozzák meg az optimális útvonalat.</li><li><strong>Alhálózatok és NAT (Network Address Translation)</strong>: Lehetővé teszi a privát és a nyilvános hálózatok közötti címfordítást, megvédve a belső hálózatot.</li><li><strong>Protokollok (pl. ARP és RARP)</strong>: Az IP-címek és a MAC-címek közötti leképezésért felelősek (ARP), illetve fordított irányú leképezés (RARP) révén.</li></ul><h3>Szállítási réteg (4. réteg)</h3><p>A szállítási réteg különböző protokollokat használ az adatok megbízható továbbításához.</p><ul><li><strong>TCP (Transmission Control Protocol)</strong>: Megbízható, kapcsolat-orientált protokoll, amely biztosítja a csomagok sorrendiségét és a hibaellenőrzést.</li><li><strong>UDP (User Datagram Protocol)</strong>: Kapcsolat nélküli protokoll, amely gyors, de nem garantálja az adatok hibamentes átvitelét.</li><li><strong>SPX (Sequenced Packet Exchange)</strong>: A Novell NetWare hálózatokban használt, régebbi protokoll, amely szintén kapcsolat-orientált.</li></ul><h3>Viszonylati réteg (5. réteg)</h3><p>Ez a réteg kezeli a kapcsolatok kezelését és fenntartását.</p><ul><li><strong>Kezdeti szinkronizálás</strong>: Felel a kapcsolat kezdeti beállításáért, a kommunikációs szabályok meghatározásáért.</li><li><strong>Kapcsolat megszakítás</strong>: A kapcsolat bontásáért felelős szabályokat határozza meg.</li><li><strong>Checkpointing</strong>: Meghatározott pontokon elmenti az adatokat, így hiba esetén vissza lehet térni egy korábbi állapothoz a kapcsolat újbóli létrehozása nélkül.</li></ul><h3>Megjelenítési réteg (6. réteg)</h3><p>Ez a réteg foglalkozik az adatok megfelelő formátumba történő alakításával.</p><ul><li><strong>Titkosítás és Dekódolás</strong>: Az adatok titkosítása és visszafejtése biztonsági okokból.</li><li><strong>Adattömörítés</strong>: Az adatméret csökkentése a gyorsabb átvitel érdekében.</li><li><strong>Formátum konverzió</strong>: Különböző adatformátumok átalakítása, hogy a küldő és a fogadó rendszerek megértsék egymást.</li></ul><h3>Alkalmazási réteg (7. réteg)</h3><p>Az alkalmazási réteg többféle protokollt és szolgáltatást kínál, amelyek a felhasználói alkalmazások számára biztosítanak hálózati elérést.</p><ul><li><strong>HTTP/HTTPS (Hypertext Transfer Protocol)</strong>: Weboldalak adatainak átvitelére szolgáló protokoll, amely biztonságos (HTTPS) változatot is biztosít.</li><li><strong>FTP (File Transfer Protocol)</strong>: Fájlok átvitelére szolgáló protokoll.</li><li><strong>SMTP, IMAP, POP3</strong>: E-mail küldésére és fogadására szolgáló protokollok.</li><li><strong>DNS (Domain Name System)</strong>: A domain nevek IP-címekre történő leképezéséért felel.</li><li><strong>SNMP (Simple Network Management Protocol)</strong>: Hálózati eszközök megfigyelésére és kezelésére szolgáló protokoll.</li></ul><h3>Speciális példák és alrétegek</h3><ul><li><strong>SSL/TLS a Megjelenítési és Alkalmazási réteg között</strong>: Bár a titkosítási protokollokat a megjelenítési réteggel társítjuk, a TLS (Transport Layer Security) gyakran az alkalmazási réteg protokolljaival működik együtt a biztonság érdekében (pl. HTTPS).</li><li><strong>QoS (Quality of Service)</strong>: A szállítási réteg funkciói között található, és az adatforgalom prioritásának kezelését végzi, ami különösen fontos multimédiás adatfolyamoknál.</li></ul></div>
@@ -221,10 +221,10 @@
 					<div class="s-f-l-c s-f-l-c-last">
 						<div class="s-f-sf">
                             <span class="sf b">
-<span class="sf-content sf-c link">Az oldalt a <a href="https://www.webnode.hu?utm_source=text&utm_medium=footer&utm_campaign=free1&utm_content=wnd2" rel="nofollow noopener" target="_blank">Webnode</a> működteti</span>
+
 </span>
                             <span class="sf-cbr link">
-    <a href="#" rel="nofollow">Sütik</a>
+    
 </span>
                             
                             
@@ -248,27 +248,12 @@
         </footer>
     </div>
     <div class="wnd-free-stripe cf">
-    <a class="wnd-free-stripe-link" target="_blank" href="https://www.webnode.com/hu/?utm_source=text&amp;utm_medium=footer&amp;utm_content=wnd2_blue_bottom_button&amp;utm_campaign=signature" rel="noopener nofollow">
-        <span class="wnd-free-stripe-text-mobile">Készítsd el weboldaladat ingyen!</span>
-        <span class="wnd-free-stripe-text">Ez a weboldal a Webnode segítségével készült. <strong>Készítsd el a sajátodat</strong> ingyenesen még ma!</span>
-        <span class="wnd-free-stripe-button">Kezdd el</span>
-    </a>
+    
 </div>
 </div>
 <section class="cb cb-dark" id="cookiebar" style="display:none;" id="cookiebar" style="display:none;">
 	<div class="cb-bar cb-scrollable">
-		<div class="cb-bar-c">
-			<div class="cb-bar-text">Sütiket használunk, hogy biztosítsuk a weboldal megfelelő működését és biztonságát, valamint hogy a lehető legjobb felhasználói élményt kínáljuk Neked.</div>
-			<div class="cb-bar-buttons">
-				<button class="cb-button cb-close-basic" data-action="accept-necessary">
-					<span class="cb-button-content">Csak a legszükségesebbek elfogadása</span>
-				</button>
-				<button class="cb-button cb-close-basic" data-action="accept-all">
-					<span class="cb-button-content">Összes elfogadása</span>
-				</button>
-				
-			</div>
-		</div>
+		
         <div class="cb-close cb-close-basic" data-action="accept-necessary"></div>
 	</div>
 
