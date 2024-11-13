@@ -1,9 +1,8 @@
 
 <!DOCTYPE html>
 <html class="no-js" prefix="og: https://ogp.me/ns#" lang="hu">
-<head><link rel="preconnect" href="https://duyn491kcolsw.cloudfront.net" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta charset="utf-8"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/2d/2di/2div3h.svg?ph=97d10bf9fc" type="image/svg+xml" sizes="any"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/07/07f/07fzq8.svg?ph=97d10bf9fc" type="image/svg+xml" sizes="16x16"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/1j/1j3/1j3767.ico?ph=97d10bf9fc"><link rel="apple-touch-icon" href="https://duyn491kcolsw.cloudfront.net/files/1j/1j3/1j3767.ico?ph=97d10bf9fc"><link rel="icon" href="https://duyn491kcolsw.cloudfront.net/files/1j/1j3/1j3767.ico?ph=97d10bf9fc">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OSI modell rétegei részletezve :: iksz</title>
+<head><link rel="preconnect" href="https://duyn491kcolsw.cloudfront.net" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta charset="utf-8">
+    <title>OSI modell rétegei részletezve :: IKSZ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="msapplication-tap-highlight" content="no">
     
@@ -150,7 +149,7 @@
 	<div class="ez-c"><div class="b b-text cf">
 	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center"><strong>Rétegek részletezve</strong></h1>
 
-<p>Ide írhatsz...</p>
+<p></p>
 </div>
 </div><div class="b b-text cf">
 	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Az <strong>OSI modell</strong> (Open Systems Interconnection model) egy rétegelt hálózati modell, amelyet az ISO (International Organization for Standardization) dolgozott ki, hogy szabványosítsa és egyszerűsítse a hálózati kommunikációt különböző rendszerek között. Az OSI modell 7 rétegre van bontva, és mindegyik réteg különböző funkciókat lát el a hálózati kommunikáció során. Az alábbiakban részletesen kifejtem a modell működését, a rétegek funkcióit, és az esetleges alternatív megoldásokat is.</p><h3>Az OSI modell 7 rétege</h3><ol><li><p><strong>Fizikai réteg (Physical Layer)</strong></p><ul><li><strong>Működés:</strong> Ez a réteg foglalkozik a tényleges adatátvitellel a fizikai médián (kábel, optikai szál, rádióhullámok stb.). Ide tartozik a bitátvitel, az elektromos jelek, a csatlakozók és a fizikai eszközök (pl. hálózati kártyák, switch-ek).</li><li><strong>Feladata:</strong> A bit-ek (0-k és 1-esek) küldése és fogadása. A réteg felelős azért, hogy az adatokat elektromos, optikai vagy rádiós jelekké alakítsa.</li></ul></li><li><p><strong>Adatkapcsolati réteg (Data Link Layer)</strong></p><ul><li><strong>Működés:</strong> Ez a réteg biztosítja, hogy az adatokat hiba nélkül továbbítsák a fizikai rétegen. Az adatokat keretekké (frames) szervezi, és segít a hálózati eszközök közötti hibák felismerésében és javításában.</li><li><strong>Feladata:</strong> A hálózati eszközök közötti kommunikáció szabályozása, az adatcsomagok összegyűjtése és hibaellenőrzése. Emellett kezelni tudja az eszközök MAC (Media Access Control) címét is.</li></ul></li><li><p><strong>Hálózati réteg (Network Layer)</strong></p><ul><li><strong>Működés:</strong> Ez a réteg felelős a csomagok (datagram-ok) továbbításáért a különböző hálózatok között. A legfontosabb feladata az útválasztás (routing), azaz annak meghatározása, hogy a csomagok hogyan jussanak el a forrástól a célig.</li><li><strong>Feladata:</strong> Az IP-címek kezelése és az útválasztás, tehát az adatokat különböző hálózatok között irányítja.</li></ul></li><li><p><strong>Szállítási réteg (Transport Layer)</strong></p><ul><li><strong>Működés:</strong> Az adatokat megbízhatóan továbbítja az egyik rendszerből a másikba. Biztosítja az adatcsomagok helyes sorrendjét és szükség esetén a hibajavítást is. A leggyakrabban használt protokollok: TCP (Transmission Control Protocol) és UDP (User Datagram Protocol).</li><li><strong>Feladata:</strong> Az adatok megbízható átvitele a forrás és a cél között, biztosítva, hogy az adatcsomagok sorrendben érkezzenek meg.</li></ul></li><li><p><strong>Szessions réteg (Session Layer)</strong></p><ul><li><strong>Működés:</strong> Ez a réteg kezeli a hálózati kommunikáció különböző szakaszait, mint például a kapcsolat felépítése, fenntartása és lezárása. A szessziók segítenek a különböző alkalmazások közötti folyamatok szinkronizálásában.</li><li><strong>Feladata:</strong> Kommunikációs szessziók létrehozása, fenntartása és megszüntetése, amely biztosítja, hogy az adatcsere zökkenőmentes legyen.</li></ul></li><li><p><strong>Prezentációs réteg (Presentation Layer)</strong></p><ul><li><strong>Működés:</strong> A réteg feladata az adatok kódolása, titkosítása és dekódolása. Az alkalmazások számára biztosítja, hogy az adatokat érthető formátumban kapják meg.</li><li><strong>Feladata:</strong> Az adatok formátumának átalakítása, például kódolás (ASCII, JPEG, SSL titkosítás), és adatkompresszió.</li></ul></li><li><p><strong>Alkalmazási réteg (Application Layer)</strong></p><ul><li><strong>Működés:</strong> Ez a réteg biztosítja a felhasználói alkalmazások és a hálózat közötti közvetlen kapcsolatot. Itt találhatók a legfelső szintű hálózati protokollok, például HTTP (web), FTP (fájlátvitel), SMTP (email).</li><li><strong>Feladata:</strong> Az alkalmazások számára biztosítja a hálózati kommunikációhoz szükséges szolgáltatásokat, mint például fájlok átvitele, e-mail küldés, weboldalak böngészése.</li></ul></li></ol><h3>Miért fontos az OSI modell?</h3><p>Az OSI modell segít a hálózati protokollok és rendszerek megértésében és rendszerezésében. Az egyes rétegek jól meghatározott funkcióval rendelkeznek, így amikor egy hálózati probléma lép fel, könnyebb meghatározni, hogy melyik rétegben történt a hiba. Az OSI modell alapvetően segít a hálózati eszközök és szoftverek interoperabilitásában, mivel minden réteg más és más feladatot lát el.</p><h3>Van-e jobb alternatíva?</h3><p>Bár az OSI modell alapvető fontosságú a hálózati kommunikációs protokollok megértésében és az iparági szabványokban, az <strong>OSI modell nem a legelterjedtebb az iparban</strong>. A gyakorlatban inkább a <strong>TCP/IP modell</strong> van használatban, amely egyszerűbb és közvetlenebb. A TCP/IP modell négy rétegre bontja a kommunikációt:</p><ol><li><strong>Link réteg</strong> (hasonló az OSI adatkapcsolati és fizikai rétegéhez)</li><li><strong>Internet réteg</strong> (hasonló az OSI hálózati rétegéhez)</li><li><strong>Szállítási réteg</strong> (hasonló az OSI szállítási rétegéhez)</li><li><strong>Alkalmazási réteg</strong> (összevonja az OSI alkalmazási, prezentációs és szessions rétegeit)</li></ol><p>Miért van előnyben a TCP/IP modell?</p><p></p><ul><li><strong>Egyszerűség</strong>: A TCP/IP modell kevesebb réteggel rendelkezik, így könnyebben alkalmazható és egyszerűbben érthető.</li><li><strong>Valós ipari használat</strong>: A TCP/IP protokoll az internet alapjául szolgál, és gyakorlatilag minden hálózati alkalmazás ezen a modellen alapul.</li><li><strong>Skálázhatóság</strong>: A TCP/IP könnyebben alkalmazható a különböző eszközökhöz és hálózati konfigurációkhoz.</li></ul><p>Az OSI modell inkább egy elméleti keretet ad, míg a TCP/IP modell a valós alkalmazásokban használt, így az ipari gyakorlatban általában az utóbbi a domináns.</p><h3>Összegzés</h3><ul><li>Az OSI modell 7 rétegre osztja a hálózati kommunikációt, és mindegyik réteg specifikus feladatokat lát el a bitátviteltől az alkalmazások közötti kommunikációig.</li><li>Bár az OSI modell fontos oktatási eszköz és szabvány, az iparban inkább a TCP/IP modellt használják, mivel az egyszerűbb és közvetlenebb.</li><li>Az OSI modell segít megérteni, hogyan működnek a hálózati rendszerek és hogyan történik az adatforgalom az eszközök között.</li></ul></div>
@@ -190,10 +189,7 @@
 					<div class="s-f-l-c s-f-l-c-last">
 						<div class="s-f-sf">
                             <span class="sf b">
-<span class="sf-content sf-c link">Az oldalt a <a href="https://www.webnode.hu?utm_source=text&utm_medium=footer&utm_campaign=free1&utm_content=wnd2" rel="nofollow noopener" target="_blank">Webnode</a> működteti</span>
-</span>
-                            <span class="sf-cbr link">
-    <a href="#" rel="nofollow">Sütik</a>
+
 </span>
                             
                             
@@ -217,27 +213,12 @@
         </footer>
     </div>
     <div class="wnd-free-stripe cf">
-    <a class="wnd-free-stripe-link" target="_blank" href="https://www.webnode.com/hu/?utm_source=text&amp;utm_medium=footer&amp;utm_content=wnd2_blue_bottom_button&amp;utm_campaign=signature" rel="noopener nofollow">
-        <span class="wnd-free-stripe-text-mobile">Készítsd el weboldaladat ingyen!</span>
-        <span class="wnd-free-stripe-text">Ez a weboldal a Webnode segítségével készült. <strong>Készítsd el a sajátodat</strong> ingyenesen még ma!</span>
-        <span class="wnd-free-stripe-button">Kezdd el</span>
-    </a>
+    
 </div>
 </div>
 <section class="cb cb-dark" id="cookiebar" style="display:none;" id="cookiebar" style="display:none;">
 	<div class="cb-bar cb-scrollable">
-		<div class="cb-bar-c">
-			<div class="cb-bar-text">Sütiket használunk, hogy biztosítsuk a weboldal megfelelő működését és biztonságát, valamint hogy a lehető legjobb felhasználói élményt kínáljuk Neked.</div>
-			<div class="cb-bar-buttons">
-				<button class="cb-button cb-close-basic" data-action="accept-necessary">
-					<span class="cb-button-content">Csak a legszükségesebbek elfogadása</span>
-				</button>
-				<button class="cb-button cb-close-basic" data-action="accept-all">
-					<span class="cb-button-content">Összes elfogadása</span>
-				</button>
-				
-			</div>
-		</div>
+		
         <div class="cb-close cb-close-basic" data-action="accept-necessary"></div>
 	</div>
 
